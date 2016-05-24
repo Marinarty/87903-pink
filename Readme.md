@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Цыганок](https://up.htmlacademy.ru/adaptive/7/user/87903).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Болтян](https://htmlacademy.ru/profile/id83202).
 
 ---
 
