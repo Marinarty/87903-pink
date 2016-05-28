@@ -5,8 +5,105 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="#" width="" height="" alt="Pink">
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nave__list">
+            <li class="main-nav__item">Главная</li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="banner">
+    </div>
+    <section class="download">
+      <a class="download__button btn" href="#">Скачать приложение</a>
+      <div class="download__markets">
+      <span class="markets-links">
+        <a class="markets-links markets-link--ios" href="#">iOS</a>
+        <a class="markets-links markets-link--android" href="#">Android</a>
+        <a class="markets-links markets-link--windows" href="#">Windows</a>
+      </span>
+      </div>
+      <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="advantages">
+      <p class="advantages__title">Устали от серости мегаполиса?  Нам есть, что вам  предложить!</p>
+      <div class="advantages__item">
+        <b>Поднимает настроение</b>
+        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="advantages__item">
+        <b>Меняет мир вокруг</b>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="advantages__item">
+        <b>Зовите новых друзей</b>
+        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+        <div class="reviews-list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author">Николай Петров</cite>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="prices__wrapper slider">
+        <input class="slider__input" type="radio" name="prices" id="prices-input-1">
+        <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
+        <input class="slider__input" type="radio" name="prices" id="prices-input-3">
+        <div class="prices-list">
+          <div class="prices__item slider__item">
+            <p class="prices__title">Стандарт</p>
+            <p class="prices__price">3,99 USD</p>
+            <table class="prices__features-list">
+              <tr>
+                <td class="prices__feature">Розовый фильтр</td>
+                <td class="prices__on"><td>
+              </tr>
+              <tr>
+                <td class="prices__feature">Смайлики</td>
+                <td class="prices__on"><td>
+              </tr>
+              <tr>
+                <td class="prices__feature">Комментарии</td>
+                <td class="prices__off"><td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-info">
+      <p class="contact-info__title">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contact-info__item">
+        <b>Звоните:</b>
+        <p>+7 (812) 555-66-66</p>
+      </div>
+      <div class="contact-info__item">
+        <b>Пишите:</b>
+        <p>mail@htmlacademy.ru</p>
+      </div>
+      <div class="contact-info__item">
+        <b>Приезжайте в гости:</b>
+        <p>ул. Большая<br> Конюшенная, 19/8</p>
+      </div>
+      <div class="contact-info__map"></div>
+    </section>
   </body>
 </html>
