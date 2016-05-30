@@ -13,7 +13,7 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nave__list">
-            <li class="main-nav__item">Главная</li>
+            <li class="main-nav__item main-nav__item--active">Главная</li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
@@ -54,7 +54,7 @@
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
         <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-        <div class="reviews-list">
+        <div class="reviews__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author">Николай Петров</cite>
             <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -67,7 +67,7 @@
         <input class="slider__input" type="radio" name="prices" id="prices-input-1">
         <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
         <input class="slider__input" type="radio" name="prices" id="prices-input-3">
-        <div class="prices-list">
+        <div class="prices__list">
           <div class="prices__item slider__item">
             <p class="prices__title">Стандарт</p>
             <p class="prices__price">3,99 USD</p>
@@ -103,7 +103,11 @@
         <b>Приезжайте в гости:</b>
         <p>ул. Большая<br> Конюшенная, 19/8</p>
       </div>
-      <div class="contact-info__map"></div>
     </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__map"></div>
+      </div>
+    </footer>
   </body>
 </html>
