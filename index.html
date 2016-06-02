@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>Главная</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
@@ -23,7 +23,7 @@
         </div>
       </nav>
     </header>
-    <div class="banner">
+    <div class="banner banner--full"> <!--Я уже не знаю, как стилизовать этот блок с фоном, чтобы он разной высоты на разных страницах был. См. мои идеи в banner.less -->
       <div class="banner__inner-image"></div>
     </div>
     <section class="download">
@@ -38,58 +38,57 @@
       <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
-      <p class="advantages__title">Устали от серости мегаполиса?</br>  Нам есть, что вам  предложить!</p>
-      <div class="advantages__item">
-        <b>Поднимает настроение</b>
-        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <p class="advantages__title">Устали от серости мегаполиса?<br>  Нам есть, что вам  предложить!</p>
+      <div class="advantages__wrapper">
+        <div class="advantages__item">
+          <b>Поднимает настроение</b>
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="advantages__item">
+          <b>Меняет мир вокруг</b>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="advantages__item">
+          <b>Зоводит новых друзей</b>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
       </div>
-      <div class="advantages__item">
-        <b>Меняет мир вокруг</b>
-        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="advantages__item">
-        <b>Зовите новых друзей</b>
-        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
       <div class="advantages__image"></div>
-      </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
         <div class="reviews__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author">Николай Петров</cite>
             <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
       </div>
     </section>
     <section class="prices">
       <div class="prices__wrapper slider">
-        <input class="slider__input" type="radio" name="prices" id="prices-input-1">
-        <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
-        <input class="slider__input" type="radio" name="prices" id="prices-input-3">
         <div class="prices__list">
           <div class="prices__item slider__item">
             <table class="prices__features-list">
               <th class="prices__title">Стандарт<br> 3,99 USD</th>
               <tr>
                 <td class="prices__feature">Розовый фильтр</td>
-                <td class="prices__on"><td>
               </tr>
               <tr>
                 <td class="prices__feature">Смайлики</td>
-                <td class="prices__on"><td>
               </tr>
               <tr>
                 <td class="prices__feature">Комментарии</td>
-                <td class="prices__off"><td>
               </tr>
             </table>
           </div>
         </div>
+        <input class="slider__input" type="radio" name="prices" id="prices-input-1">
+        <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
+        <input class="slider__input" type="radio" name="prices" id="prices-input-3">
       </div>
     </section>
     <section class="contact-info">
