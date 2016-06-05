@@ -2,12 +2,10 @@
   background: rgba(29,38,49,.8);
   padding: 0 20px;
   height: 66px;
-  color: #ffffff;
+  color: @white;
   position: relative;
 }
 
-.page-header::after {
-  content: "";
-  display: table;
-  clear: both;
+.page-header {
+  .clearfix();
 }
