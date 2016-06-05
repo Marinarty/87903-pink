@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии пользователей</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <div class="page-header__logo">
         <a href="index"><img src="#" width="" height="" alt="Pink"></a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nave__list">
+          <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item main-nav__item--active">Фотографии</li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
@@ -21,17 +23,17 @@
         </div>
       </nav>
     </header>
-    <div class="page-desc">
-      <h1 class="page-desc__title">Фотографии пользователей</h1>
-      <p class="page-desc__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <div class="banner banner--short">
+      <h1 class="banner__title">Фотографии пользователей</h1>
     </div>
+    <div class="page-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
     <section class="post">
-      <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+      <div class="post__photo post__photo--panorama">
+        <a href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Photo"></a>
         <div class="post__label">Панорама дня</div>
       </div>
       <div class="post__content">
-        <b class="post__author">Анна</b>
+        <p class="post__author">Анна</p>
         <time class="post__date" datetime="">(5 минут назад)</time>
         <p class="post__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
         <p class="post__likes">Нравится: 215</p>
@@ -39,10 +41,10 @@
     </section>
     <section class="post">
       <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+        <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo"></a> <!--У ссылки тут есть какие-то дефолтные отступы, кот. у меня не получается сбросить-->
       </div>
       <div class="post__content">
-        <b class="post__author">Левон</b>
+        <p class="post__author">Левон</p>
         <time class="post__date" datetime="">(5 часов назад)</time>
         <p class="post__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
         <p class="post__likes">Нравится: 356</p>
@@ -50,10 +52,10 @@
     </section>
     <section class="post">
       <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+        <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
       <div class="post__content">
-        <b class="post__author">Антон</b>
+        <p class="post__author">Антон</p>
         <time class="post__date" datetime="">(12 часов назад)</time>
         <p class="post__desc">Соседи будут рады!</p>
         <p class="post__likes">Нравится: 666</p>
@@ -61,10 +63,10 @@
     </section>
     <section class="post">
       <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+        <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
       <div class="post__content">
-        <b class="post__author">Борис</b>
+        <p class="post__author">Борис</p>
         <time class="post__date" datetime="">(20 часов назад)</time>
         <p class="post__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
         <p class="post__likes">Нравится: 215</p>
@@ -72,10 +74,10 @@
     </section>
     <section class="post">
       <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+        <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
       <div class="post__content">
-        <b class="post__author">Сергей</b>
+        <p class="post__author">Сергей</p>
         <time class="post__date" datetime="">(25 часов назад)</time>
         <p class="post__desc">Самая кубанская в мире!</p>
         <p class="post__likes">Нравится: 4</p>
@@ -83,10 +85,10 @@
     </section>
     <section class="post">
       <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+        <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
       <div class="post__content">
-        <b class="post__author">Максим</b>
+        <p class="post__author">Максим</p>
         <time class="post__date" datetime="">(40 часов назад)</time>
         <p class="post__desc">Где снег-то?</p>
         <p class="post__likes">Нравится: 150</p>
@@ -94,33 +96,33 @@
     </section>
     <section class="post">
       <div class="post__photo">
-        <a href="#"><img src="#" alt="Photo"></a>
+        <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
       <div class="post__content">
-        <b class="post__author">Надежда</b>
+        <p class="post__author">Надежда</p>
         <time class="post__date" datetime="">(45 часов назад)</time>
         <p class="post__desc">Всем GM и взаимные лайки!</p>
         <p class="post__likes">Нравится: 2560</p>
       </div>
     </section>
-    <p class="page-desc__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-    <form class="post-photo">
-      <div class="post-photo__photo">
-        <img src="#" alt="Your photo">
+    <p class="page-intro">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+    <form class="submit-photo">
+      <div class="submit-photo__photo">
+        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Your photo">
       </div>
-      <div class="post-photo__tools">
+      <div class="submit-photo__tools">
       <span class="tools">
         <a class="tools tool-icon--crop" href="#">Кадрировать</a>
         <a class="tools tool-icon--filter" href="#">Фильтр</a>
         <a class="tools tool-icon--brightness" href="#">Яркость</a>
       </span>
       </div>
-      <div class="post-photo__controls">
-        <div class="post-photo__bar"></div>
-        <div class="post-photo__range-toggle"></div>
+      <div class="submit-photo__controls">
+        <div class="submit-photo__bar"></div>
+        <div class="submit-photo__range-toggle"></div>
       </div>
-      <button class="post-photo__button button--submit" type="submit">Запостить</button>
-      <input class="post-photo__button button--reset" type="reset" value="Отмена">
+      <button class="submit-photo__button button--submit" type="submit">Запостить</button>
+      <input class="submit-photo__button button--reset" type="reset" value="Отмена">
     </form>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
