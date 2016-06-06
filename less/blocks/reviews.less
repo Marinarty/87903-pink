@@ -1,9 +1,15 @@
 .reviews {
+  background: @white;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 50px;
   padding-bottom: 60px;
+  display: block;
+}
+
+.reviews__wrapper {
+  .container();
 }
 
 .reviews__author {
@@ -15,9 +21,19 @@
   display: block;
 }
 
+.reviews__author-description {
+  display: none;
+}
+
+@media @tablet-widths {
+  .reviews__author-description {
+    display: block;
+  }
+}
+
 .reviews__item p {
   font-size: 14px;
-  line-height: 30px;  
+  line-height: 30px;
   margin-bottom: 30px;
 }
 

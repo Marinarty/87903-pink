@@ -9,6 +9,41 @@
   text-transform: uppercase;
 }
 
+.contest-form__wrapper{
+  .container();
+}
+
+@media @desktop-widths {
+  .contest-form__wrapper{
+    .clearfix();
+  }
+
+  .contest-form__personal-data {
+    float: left;
+    display: inline-block;
+  }
+
+  .contest-form__apps {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+@media @tablet-widths {
+  .contest-form__wrapper{
+    .clearfix();
+  }
+  .contest-form__button {
+    float: left;
+    display: inline-block;
+  }
+  .contest-form__note {
+    float: right;
+    display: inline-block;
+  }
+}
+
 .contest-form__achievements,
 .contest-form__apps {
   background: @grey;
@@ -37,7 +72,7 @@
   display: inline-block;
 }
 
-.contest-form__wrapper {
+.contest-form__wrapper-in {
   display: block;
   margin-top: 20px;
 }
@@ -82,4 +117,10 @@
 
 .contest-form fieldset {
   border: none;
+}
+
+.contest-form__personal-data,
+.contest-form__contacts,
+.contest-form__review {
+  background: @white;
 }

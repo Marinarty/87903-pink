@@ -8,6 +8,7 @@
   </head>
   <body class="page">
     <header class="page-header">
+      <div class="page-header__wrapper">
       <div class="page-header__logo">
         <a href="index"><img src="#" width="" height="" alt="Pink"></a>
       </div>
@@ -22,12 +23,19 @@
           </ul>
         </div>
       </nav>
-    </header>
-    <div class="banner banner--short">
-      <h1 class="banner__title">Фотографии пользователей</h1>
     </div>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="banner__wrapper">
+        <div class="banner banner--short">
+        <h1 class="banner__title">Фотографии пользователей</h1>
+       </div>
+     </div>
+   </div>
     <div class="page-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
-    <section class="post">
+    <div class="post">
+    <section class="post__item">
       <div class="post__photo post__photo--panorama">
         <a href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Photo"></a>
         <div class="post__label">Панорама дня</div>
@@ -39,7 +47,7 @@
         <p class="post__likes">Нравится: 215</p>
       </div>
     </section>
-    <section class="post">
+    <section class="post__item">
       <div class="post__photo">
         <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo"></a> <!--У ссылки тут есть какие-то дефолтные отступы, кот. у меня не получается сбросить-->
       </div>
@@ -50,7 +58,7 @@
         <p class="post__likes">Нравится: 356</p>
       </div>
     </section>
-    <section class="post">
+    <section class="post__item">
       <div class="post__photo">
         <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
@@ -61,7 +69,7 @@
         <p class="post__likes">Нравится: 666</p>
       </div>
     </section>
-    <section class="post">
+    <section class="post__item">
       <div class="post__photo">
         <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
@@ -72,7 +80,7 @@
         <p class="post__likes">Нравится: 215</p>
       </div>
     </section>
-    <section class="post">
+    <section class="post__item">
       <div class="post__photo">
         <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
@@ -83,7 +91,7 @@
         <p class="post__likes">Нравится: 4</p>
       </div>
     </section>
-    <section class="post">
+    <section class="post__item">
       <div class="post__photo">
         <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
@@ -94,7 +102,7 @@
         <p class="post__likes">Нравится: 150</p>
       </div>
     </section>
-    <section class="post">
+    <section class="post__item">
       <div class="post__photo">
         <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
       </div>
@@ -105,6 +113,7 @@
         <p class="post__likes">Нравится: 2560</p>
       </div>
     </section>
+  </div>
     <p class="page-intro">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
     <form class="submit-photo">
       <div class="submit-photo__photo">
@@ -117,13 +126,16 @@
         <a class="tools tool-icon--brightness" href="#">Яркость</a>
       </span>
       </div>
-      <div class="submit-photo__controls">
+<!--      <div class="submit-photo__controls">
         <div class="submit-photo__bar"></div>
         <div class="submit-photo__range-toggle"></div>
-      </div>
+      </div> -->
+      <div class="submit-photo__buttons">
       <button class="submit-photo__button button--submit" type="submit">Запостить</button>
       <input class="submit-photo__button button--reset" type="reset" value="Отмена">
+      </div>
     </form>
+  </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <section class="page-footer__logo">
