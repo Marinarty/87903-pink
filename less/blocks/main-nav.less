@@ -1,11 +1,10 @@
 .main-nav {
-  background: #1d2631;
+  background: rgba(29,38,49,.8);
   text-transform: uppercase;
   color: @white;
-}
-
-.main-nav__list {
-  display: none;
+  margin: 0 auto;
+  float: right;
+  display: inline-block;
 }
 
 .main-nav__toggle {
@@ -14,8 +13,30 @@
   vertical-align: middle;
 }
 
-.page-header__logo {
-  float: left;
-  display: inline-block;
-  vertical-align: middle;
+@media @desktop-widths {
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+@media @desktop-widths {
+
+  .main-nav__list {
+    display: inline-block;
+    width: 500px;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+  }
+
 }

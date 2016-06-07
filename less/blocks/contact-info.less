@@ -1,7 +1,21 @@
 .contact-info {
+  background: @white;
   text-align: center;
   padding-top: 45px;
   padding-bottom: 45px;
+  .clearfix();
+}
+@media @tablet-widths {
+  .contact-info__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+  }
+
+}
+
+.contact-info__wrapper {
+  .container();
 }
 
 .contact-info__title {
@@ -20,4 +34,9 @@
   line-height: 30px;
   color: @pink;
   margin-bottom: 20px;
+}
+
+.contact-info__map {
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  height: 200px;
 }

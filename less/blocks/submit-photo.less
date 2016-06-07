@@ -1,11 +1,10 @@
 .submit-photo {
   background: @grey;
+  .container();
 }
 
 .submit-photo__photo {
   display: block;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 20px;
 }
 
@@ -16,4 +15,41 @@
 .submit-photo__button {
   display: block;
   margin: 0 auto;
+}
+
+@media @tablet-widths {
+  .clearfix();
+
+  .submit-photo__photo {
+    width: 300px;
+  }
+
+  .submit-photo__buttons {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 300px;
+  }
+
+  .submit-photo__tools {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 300px;
+  }
+
+  .submit-photo__photo {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .submit-photo__buttons,
+  .submit-photo__tools {
+    width: 410px;
+  }
 }

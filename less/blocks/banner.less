@@ -1,14 +1,19 @@
 
 .banner {
-  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
+  background: @blue-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
   margin-top: -66px;
 }
 
-&--full {
+.banner__wrapper {
+  .container();
+}
+
+
+.banner.banner--full {
   height: 460px;
 }
 
-&--short {
+.banner.banner--short {
   height: 237px;
 }
 
@@ -18,15 +23,37 @@
 }
 
 .banner__title {
+  display: none;
   font-size: 24px;
   line-height: 26px;
   color: @white;
   font-weight: 300;
-  display: block;
-  margin-top: 0;
   padding-top: 100px;
   padding-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
+}
+
+@media @tablet-widths {
+  .banner__title {
+    display: block;
+    float: left;
+    font-size: 40px;
+    line-height: 40px;
+    width: 200px;
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .banner.banner--full {
+    height: 853px;
+    margin-top: -110px;
+  }
+
+  .banner.banner--short {
+    height: 440px;
+    margin-top: -110px;
+  }
+
 }
