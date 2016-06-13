@@ -1,24 +1,23 @@
 .post {
-  .container();
+  margin-top: -200px;
+  background: @white;
 }
 
-.post__item:first-child {
-  display: block;
+.post__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
 }
 
 .post__item {
   margin-top: 20px;
-  background: @white;
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-@media @tablet-widths {
-  .post__item {
-    display: inline-block;
-    vertical-align: top;
-    width: 300px;
-  }
-
+.post__item:first-child {
+  width: 100%;
 }
 
 .post__photo {
@@ -74,4 +73,23 @@
 .post__likes {
   color: @pink;
   margin-top: 13px;
+}
+
+
+@media @tablet-widths {
+  .post {
+    margin-top: -400px;
+  }
+  .post__wrapper {
+    .container();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post__item {
+    text-align: left;
+  }
+
 }

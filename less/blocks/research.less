@@ -1,24 +1,26 @@
 .research {
-  background: @grey;
+  background: @white;
   display: none;
+  text-align: left;
 }
 
 .research__wrapper {
   .container();
 }
 
-@media @tablet-widths {
-  .research {
-    display: block;
-    padding-left: 50%;
-  }
+.research__block {
+  float: right;
+  width: 310px;
+  margin-top: 95px;
 }
 
 .research b {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   color: #000000;
+  display: block;
+  width: 170px;
 }
 
 .research p {
@@ -27,4 +29,36 @@
 
 .research a {
   color: @pink;
+}
+
+@media @tablet-widths {
+  .research {
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .research {
+    background: @grey;
+  }
+  .research__block {
+    width: 570px;
+    margin-top: 90px;
+    margin-bottom: 110px;
+  }
+  .research b {
+    font-size: 30px;
+    line-height: 30px;
+    width: 300px;
+  }
+  .research p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .research a {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

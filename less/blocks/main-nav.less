@@ -1,24 +1,13 @@
 .main-nav {
   background: rgba(29,38,49,.8);
-  text-transform: uppercase;
   color: @white;
   margin: 0 auto;
-  float: right;
-  display: inline-block;
 }
 
 .main-nav__toggle {
   float: right;
   display: inline-block;
   vertical-align: middle;
-}
-
-@media @desktop-widths {
-
-  .main-nav__toggle {
-    display: none;
-  }
-
 }
 
 .main-nav__list {
@@ -28,15 +17,37 @@
   display: none;
 }
 
-@media @desktop-widths {
+.main-nav__item a,
+.main-nav__item--active {
+  display: block;
+  padding: 46px 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+  text-decoration: none;
+}
 
+@media @desktop-widths {
+  .main-nav {
+    float: right;
+    display: inline-block;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
   .main-nav__list {
     display: inline-block;
-    width: 500px;
+    vertical-align: middle;
+    width: 800px;
   }
-
   .main-nav__item {
     display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-left: 80px;
   }
 
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
 }

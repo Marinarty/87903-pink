@@ -1,55 +1,48 @@
 .submit-photo {
   background: @grey;
-  .container();
 }
 
-.submit-photo__photo {
-  display: block;
-  padding-top: 20px;
+.submit-photo__wrapper {
+  .container();
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.submit-photo__tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .submit-photo__controls {
   border-bottom: 1px solid #dddfe0;
 }
 
-.submit-photo__button {
-  display: block;
-  margin: 0 auto;
-}
 
 @media @tablet-widths {
-  .clearfix();
-
-  .submit-photo__photo {
-    width: 300px;
+  .submit-photo__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
+  .submit-photo__tools .tools {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .submit-photo__buttons {
-    display: inline-block;
-    vertical-align: top;
-    float: right;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-
-  .submit-photo__tools {
-    display: inline-block;
-    vertical-align: top;
-    float: right;
-    width: 300px;
-  }
-
-  .submit-photo__photo {
-    display: inline-block;
-    vertical-align: top;
-    float: left;
-  }
-
 }
 
 @media @desktop-widths {
-
-  .submit-photo__buttons,
-  .submit-photo__tools {
-    width: 410px;
+  .submit-photo__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }

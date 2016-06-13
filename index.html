@@ -8,9 +8,10 @@
   </head>
   <body class="page">
     <header class="page-header">
+      <div class="page-header__menu">
       <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img src="#" width="" height="" alt="Pink">
+        <img src="img/logo-pink-white-mobile.svg" width="78" height="24" alt="Pink">
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Меню</button>
@@ -24,29 +25,31 @@
         </div>
       </nav>
     </div>
+    </div>
+  <div class="page-header__inner-image"></div>
     </header>
     <main>
-    <div class="banner">
-      <div class="banner__wrapper">
-    <div class="banner banner--full">
-      <h1 class="banner__title">Взгляните на жизнь ярче</h1>
-<!--  <div class="banner__inner-image"></div> -->
-    </div>
-  </div>
-  </div>
     <section class="download">
-      <a class="download__button btn" href="#">Скачать приложение</a>
+      <div class="download__wrapper">
+        <div class="download download--left">
+      <a class="download__button" href="#">Скачать приложение</a>
       <div class="download__markets">
-      <span class="markets-links">
-        <a class="markets-links markets-link--ios" href="#">iOS</a>
-        <a class="markets-links markets-link--android" href="#">Android</a>
-        <a class="markets-links markets-link--windows" href="#">Windows</a>
-      </span>
+        <a href="#"><img class="markets-links markets-link--ios" src="/img/logo-apple.svg" width="60" height="60" alt="Apple Store"></a>
+        <a href="#"><img class="markets-links markets-link--android" src="/img/logo-android.svg" width="60" height="60" alt="Google Play"></a>
+        <a href="#"><img class="markets-links markets-link--windows" src="/img/logo-microsoft.svg" width="60" height="60" alt="Windows Store"></a>
       </div>
       <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+      </div>
     </section>
+   </div>
+    <div class="info-title">
+      <div class="info-title__wrapper">
+        <p class="info-title__first-line ">Устали от серости мегаполиса?</p>
+        <p class="info-title__second-line">Нам есть, что вам  предложить!</p>
+    </div>
+  </div>
     <section class="advantages">
-      <p class="advantages__title">Устали от серости мегаполиса?<br>  Нам есть, что вам  предложить!</p>
       <div class="advantages__wrapper">
       <div class="advantages__items">
         <div class="advantages__item">
@@ -58,72 +61,108 @@
           <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
         <div class="advantages__item">
-          <b>Зоводит новых друзей</b>
+          <b>Заводит новых друзей</b>
           <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
       </div>
-      <div class="advantages__image"></div>
     </div>
     </section>
     <section class="research">
       <div class="research__wrapper">
+        <div class="research__block">
       <b>Эффект на 24 часа!</b>
       <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
       <a href="#">Узнать больше об исследовании</a>
+    </div>
     </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <div class="reviews__list">
-          <blockquote class="reviews__item slider__item">
+          <input class="slider__input1" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input2" type="radio" name="reviews" id="reviews-input-2">
+          <input class="slider__input3" type="radio" name="reviews" id="reviews-input-3">
+
+          <div class="reviews__slider-controls">
+			    	<label for="reviews-input-1"></label>
+				    <label for="reviews-input-2"></label>
+				    <label for="reviews-input-3"></label>
+			    </div>
+          <a href="#" class="reviews__arrow  arrow--left">Пред.</a>
+			    <a href="#" class="reviews__arrow  arrow--right">След.</a>
+
+          <blockquote class="reviews__item slider__item1">
             <cite class="reviews__author">Николай Петров</cite>
             <p class="reviews__author-description">25 лет, водитель трамвая</p>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item2">
+            <cite class="reviews__author">Андрей Маркотуев</cite>
+            <p class="reviews__author-description">27 лет, программист</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item3">
+            <cite class="reviews__author">Ирина Илларионова</cite>
+            <p class="reviews__author-description">29 лет, домохозяйка</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
       </div>
     </section>
     <section class="prices">
-      <div class="prices__wrapper slider">
-        <div class="prices__list">
-          <div class="prices__item slider__item">
+      <div class="prices__wrapper">
+            <input class="slider__input1" type="radio" name="prices" id="prices-input-1">
+            <input class="slider__input2" type="radio" name="prices" id="prices-input-2" checked>
+            <input class="slider__input3" type="radio" name="prices" id="prices-input-3">
+
+            <div class="slider-controls">
+  			    	<label for="prices-input-1"></label>
+  				    <label for="prices-input-2"></label>
+  				    <label for="prices-input-3"></label>
+  			    </div>
+
             <table class="prices__features-list">
-              <th></th>
-              <th class="prices__title">База<br> 1,99 USD</th>
-              <th class="prices__title">Стандарт<br> 3,99 USD</th>
-              <th class="prices__title">Анлим<br> 9,99 USD</th>
+              <th class="prices__first-column"></th>
+              <th>
+                <p class="prices__title">База</p>
+                <p class="prices__amount">1,99 USD</p>
+              </th>
+              <th class="prices__hit-label">
+                <div class="prices__hit-label-wrapper">
+                  <p class="prices__title">Стандарт</p>
+                  <p class="prices__amount">3,99 USD</p>
+                </div>
+              </th>
+              <th>
+              <p class="prices__title">Анлим</p>
+              <p class="prices__amount">9,99 USD</p>
+             </th>
               <tr>
-                <td class="prices__feature">Розовый фильтр</td>
-                <td class="prices__on"></td>
-                <td class="prices__on"></td>
-                <td class="prices__on"></td>
+                <td class="prices__first-column"><p class="prices__feature">Розовый фильтр</p></td>
+                <td class="prices__on"><span class="filter"></span></td>
+                <td class="prices__on"><span class="filter"></td>
+                <td class="prices__on"><span class="filter"></td>
               </tr>
               <tr>
-                <td class="prices__feature">Смайлики</td>
-                <td class="prices__off"></td>
-                <td class="prices__on"></td>
-                <td class="prices__on"></td>
+                <td class="prices__first-column"><p class="prices__feature">Смайлики</p></td>
+                <td class="prices__off"><span class="emoticons"></td>
+                <td class="prices__on"><span class="emoticons"></td>
+                <td class="prices__on"><span class="emoticons"></td>
               </tr>
               <tr>
-                <td class="prices__feature">Комментарии</td>
-                <td class="prices__off"></td>
-                <td class="prices__off"></td>
-                <td class="prices__on"></td>
+                <td class="prices__first-column"><p class="prices__feature">Комментарии</p></td>
+                <td class="prices__off"><span class="comments"></td>
+                <td class="prices__off"><span class="comments"></td>
+                <td class="prices__on"><span class="comments"></td>
               </tr>
             </table>
-          </div>
-        </div>
-        <input class="slider__input" type="radio" name="prices" id="prices-input-1">
-        <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
-        <input class="slider__input" type="radio" name="prices" id="prices-input-3">
       </div>
     </section>
     <section class="contact-info">
       <div class="contact-info__wrapper">
       <p class="contact-info__title">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contact-info__items">
       <div class="contact-info__item">
         <b>Звоните:</b>
         <p>+7 (812) 555-66-66</p>
@@ -136,14 +175,15 @@
         <b>Приезжайте в гости:</b>
         <p>ул. Большая<br> Конюшенная, 19/8</p>
       </div>
-      <div class="contact-info__map"></div>
     </div>
-    </section>
+  </div>
   </main>
     <footer class="page-footer">
+    </section>
+    <section class="page-footer__map"></section>
       <div class="page-footer__wrapper">
         <section class="page-footer__logo">
-          <a href="index.html"><img src="#" width="" height="" alt="Pink"></a>
+          <a href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="50" alt="Pink"></a>
         </section>
         <section class="page-footer__social">
           <span class="social-links">
