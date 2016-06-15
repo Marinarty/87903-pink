@@ -2,11 +2,15 @@
   background: @grey;
 }
 
-.submit-photo__wrapper {
+.submit-photo__container {
   .container();
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
+}
+
+.submit-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .submit-photo__tools {
@@ -15,9 +19,89 @@ flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
+.submit-photo__buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.submit-photo__button {
+  background-color: transparent;
+  border: 3px solid @pink;
+  border-radius: 35px;
+  text-decoration: none;
+  color: @pink;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:  700;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.submit-photo__button--submit:hover {
+  background-color: @pink;
+  color: @white;
+}
+
+.submit-photo__button--submit:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-photo__button--reset {
+  border: 3px solid #dddfe0;
+  color: #dddfe0;
+  margin-top: 10px;
+}
+
+.submit-photo__button--reset:hover {
+  color: #c2c4c7;
+  border-color: #b5b9be;
+}
+
+.submit-photo__button--reset:active {
+  background-color: #b5b9be;
+}
+
 .submit-photo__controls {
   border-bottom: 1px solid #dddfe0;
 }
+// кнопки контроля
+.range-controls {
+  position: relative;
+  margin: 0 auto;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #000000;
+  width: 237px;
+}
+
+.range-controls .range-toggle {
+  position: absolute;
+  top: -6px;
+  width: 10px;
+  height: 10px;
+  background: @white;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 80%;
+}
+
+.range-controls .range-toggle--brightness {
+  left: 60%;
+}
+
+.range-toggle:hover {
+  background: @pink;
+}
+
+// кнопки контроля конец
 
 
 @media @tablet-widths {
@@ -25,7 +109,15 @@ flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
+
+ .submit-photo__tools-container {
+   width: 300px;
+ }
+
   .submit-photo__tools .tools {
     display: flex;
     flex-direction: column;
@@ -39,10 +131,25 @@ flex-wrap: wrap;
 }
 
 @media @desktop-widths {
+
+  .submit-photo__wrapper {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .submit-photo__tools-container {
+    width: 410px;
+    justify-content: space-between;
+  }
+
   .submit-photo__buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: space-between;
   }
+  .submit-photo__button {
+    width: 185px;
+  }
+
 }

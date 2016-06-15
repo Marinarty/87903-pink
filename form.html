@@ -7,27 +7,32 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__menu">
-      <div class="page-header__wrapper">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="#" width="" height="" alt="Pink"></a>
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__menu-container">
+
+          <div class="main-nav_logo">
+            <img src="img/logo-pink-white-mobile.svg" width="78" height="24" alt="Pink">
+          </div>
+          <button class="main-nav__toggle" type="button">Меню</button>
+          </div>
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a>Фотографии</a></li>
+              <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+            </ul>
+          </div>
+
+        </nav>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item main-nav__item--active">Конкурс</li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-    </header>
-    <main>
+      </div>
+      </header>
+    <main class="contest-form__container">
     <form class="contest-form" action="#" method="post">
+
       <p class="page-intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <fieldset class="contest-form__personal-data">
         <div class="contest-form__wrapper contest-form__wrapper--personal-data">
@@ -104,12 +109,14 @@
       </div>
       </fieldset>
 
-    </div>
+
     <div class="contest-form_buttons contest-form__wrapper">
       <button class="contest-form__button" type="submit">Отправить форму</button>
       <p class="contest-form__note"><sup>*</sup> — обязательные поля</p>
     </div>
+
     </form>
+
   </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -129,5 +136,21 @@
         </section>
       </div>
     </footer>
+    <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
 </html>
