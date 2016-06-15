@@ -3,22 +3,113 @@
   .clearfix();
 }
 
-.page-footer {
+.page-footer--mobile-main {
   display: none;
-  background: @white;
 }
 
-@media @tablet-widths {
-  .page-footer {
-    display: block;
-  }
+.page-footer__wrapper {
+    padding: 40px 0;
+}
+
+.page-footer {
+  background: @white;
 }
 
 .page-footer__logo,
 .page-footer__social,
 .page-footer__copyright {
-  width: 200px;
-  display: inline-block;
+  display: block;
   text-align: center;
+  width: 100%;
+}
+
+.page-footer__social .social-link {
+  display: inline-block;
   vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  background: transparent;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  font-size: 0;
+  text-decoration: none;
+}
+
+.page-footer__social .social-link--tw {
+  background: url("../img/icon-twitter.svg") no-repeat center;
+}
+
+.page-footer__social .social-link--fb {
+  background: url("../img/icon-facebook.svg") no-repeat center;
+}
+
+.page-footer__social .social-link--yt {
+  background: url("../img/icon-youtube.svg") no-repeat center;
+}
+
+.page-footer__social .social-link:last-child {
+  margin-right: 0;
+}
+
+.page-footer__logo {
+  text-align: center;
+}
+
+.page-footer__copyright {
+  text-align: center;
+}
+
+.page-footer__academy-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat center;
+  width: 30px;
+  height: 35px;
+}
+
+.page-footer__map {
+  background: grey;
+  height: 200px;
+  margin-top: 40px;
+}
+
+@media @tablet-widths {
+  .page-footer__wrapper {
+    display: block;
+  }
+
+  .page-footer__copyright {
+    float: right;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .page-footer__logo {
+    text-align: left;
+  }
+
+  .page-footer__map {
+    height: 375px;
+    margin-top: 0;
+  }
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyright {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer__wrapper {
+    padding: 60px 0;
+  }
+  .page-footer__map {
+    height: 510px;
+  }
 }

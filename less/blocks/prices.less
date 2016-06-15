@@ -1,39 +1,238 @@
 .prices {
   background-color: @grey;
-  text-transform: uppercase;
   text-align: center;
-  padding-top: 65px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .prices__wrapper {
-  .container();
+  // width: 840px;
+  margin: 0 20px;
+  padding-bottom: 70px;
+  // overflow: hidden;
 }
 
 .prices__features-list {
   background-color: @white;
-  width: 280px;
-  margin-left: 20px;
-  border: @input-border;
-  border-right: @input-border;
-  border-bottom: @input-border;
+  width: 300%;
   border-collapse: collapse;
-  margin-bottom: 30px;
+  // overflow: hidden;
 }
 
-.prices__title {
-  background: #1d2631;
+.prices__first-column {
+  display: none;
+}
+
+.prices__features-list th {
+  width: 33%;
+  height: 90px;
+  background: #283645;
   color: @white;
   font-size: 18px;
   line-height: 30px;
-  padding: 20px;
+  border: @input-border;
+}
+
+.prices__features-list th.prices__first-column {
+  background: @grey;
+  border-top: 2px solid @grey;
+  border-left: 2px solid @grey;
+}
+
+.prices__features-list tr {
+  background: @white;
+  border: @input-border;
+  height: 60px;
+}
+
+.prices__features-list td {
+  border: @input-border;
 }
 
 .prices__feature {
   font-size: 14px;
   line-height: 30px;
   text-align: left;
-  border-bottom: @input-border;
-  padding: 15px;
-  padding-right: 60px;
+  padding-left: 10px;
+}
+
+.prices__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.prices__amount {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.prices__hit-label {
+  position: relative;
+}
+
+.prices__hit-label .prices__hit-label-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 85px;
+  background: url("../img/bg-hit.svg") no-repeat;
+}
+
+.prices__hit-label .prices__hit-label-wrapper::after {
+  content: "хит";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.prices__on,
+.prices__off {
+  position:  relative;
+}
+
+.prices__on span {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon-yes.svg") no-repeat;
+}
+
+.prices__off span {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon-no.svg") no-repeat;
+}
+/*
+.prices__on .filter::before,
+.prices__off .filter::before {
+  content: "розовый фильтр";
+  position: absolute;
+}
+
+.prices__on .emoticons::before,
+.prices__off .emoticons::before {
+  content: "смайлики";
+  position: absolute;
+}
+
+.prices__on .comments::before,
+.prices__off .comments::before {
+  content: "комментарии";
+  position: absolute;
+}
+*/
+
+.prices__wrapper {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 20;
+  font-size: 0;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 15px;
+  vertical-align: top;
+  background: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid @grey;
+}
+
+.slider__input1:checked ~ .slider-controls label[for="prices-input-1"],
+.slider__input2:checked ~ .slider-controls label[for="prices-input-2"],
+.slider__input3:checked ~ .slider-controls label[for="prices-input-3"] {
+  border: 3px solid @blue-grey;
+  background: @white;
+}
+
+.slider__input2:checked ~ .prices__features-list {
+    transform: translate(-33.3%);
+}
+
+.slider__input3:checked ~ .prices__features-list {
+    transform: translate(-66.6%);
+}
+
+
+@media @tablet-widths {
+
+  .prices__features-list {
+    width: 100%;
+  }
+
+
+  .prices__wrapper {
+    .container();
+  }
+  .prices__first-column {
+    display: table-cell;
+  }
+  .slider-controls {
+    display: none;
+  }
+  .slider__input2:checked ~ .prices__features-list {
+      transform: none;
+  }
+  .prices {
+    padding-top: 90px;
+  }
+  .prices__feature {
+    padding-right: 0;
+  }
+  .prices__title {
+    font-size: 16px;
+  }
+  .prices__amount {
+    font-size: 18px;
+  }
+  .prices__features-list th {
+    height: 70px;
+    width: 25%;
+  }
+  .prices__features-list tr {
+    height: 47px;
+  }
+}
+
+@media @desktop-widths {
+  .prices__features-list {
+    margin-top: 60px;
+  }
+  .prices__features-list th {
+    height: 90px;
+  }
+  .prices__title {
+    font-size: 18px;
+  }
+  .prices__amount {
+    font-size: 24px;
+  }
+  .prices__features-list tr {
+    height: 60px;
+  }
 }

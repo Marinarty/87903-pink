@@ -5,65 +5,17 @@
 
 .advantages__wrapper {
   .container();
-}
-
-
-@media @tablet-widths {
-  .advantages {
-    .clearfix();
-  }
-}
-
-.advantages__title {
-  background: @white;
-  font-size: 24px;
-  line-height: 26px;
-  color: @blue-grey;
-  display: block;
-  vertical-align: middle;
-  padding-top: 46px;
-  padding-bottom: 46px;
-}
-
-@media @tablet-widths {
-  .advantages__title {
-    font-size: 40px;
-    line-height: 40px;
-  }
+  background: @grey url("../img/iphone-screen-mobile@1x.png") no-repeat center 505px;
+  padding-bottom: 320px;
 }
 
 .advantages__items {
-  padding-top: 55px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 45px;
-}
-
-@media @tablet-widths {
-  .advantages__items {
-    float: right;
-    display: block;
-    width: 50%;
-  }
-}
-
-@media @desktop-widths {
-  .advantages__items {
-    display: block;
-    width: 100%;
-  }
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 
 .advantages__item {
-  display: inline-block;
-  vertical-align: top;
   margin-bottom: 30px;
-}
-
-@media @desktop-widths {
-  .advantages__item {
-    width: 250px;
-  }
 }
 
 .advantages__item:last-child {
@@ -81,22 +33,54 @@
   margin-top: 13px;
 }
 
-.advantages__image {
-  background: @grey url("../img/iphone-screen-mobile@1x.png") no-repeat;
-  width: 157px;
-  height: 277px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @media @tablet-widths {
-  .advantages__image {
-    float: left;
+  .advantages__items {
+    float: right;
+    display: block;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  .advantages {
+    .clearfix();
+    }
+  .advantages__wrapper  {
+    background: @grey url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: 268px;
+    background-position: 0px 10px ;
+    padding-bottom: 0;
   }
 }
 
 @media @desktop-widths {
-  .advantages__image {
-    display: none;
+  .advantages__wrapper  {
+    background: none;
+}
+  .advantages__items {
+    width: 100%;
+    padding-top: 0;
+}
+  .advantages__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    text-align: center;
+    padding-top: 330px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat center top;
+  }
+  .advantages__item p {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+  .advantages__item b {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
   }
 }
