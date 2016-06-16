@@ -7,162 +7,168 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <div class="main-nav__menu-container">
+      <div class="menu">
+        <div class="menu__wrapper">
 
-          <div class="main-nav_logo">
-            <img src="img/logo-pink-white-mobile.svg" width="78" height="24" alt="Pink">
-          </div>
-          <button class="main-nav__toggle" type="button">Меню</button>
-          </div>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__menu-container">
 
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html">Главная</a></li>
-              <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-            </ul>
-          </div>
+              <div class="main-nav_logo">
+                <img src="img/logo-pink-white-mobile.svg" width="78" height="24" alt="Pink">
+              </div>
+              <button class="main-nav__toggle" type="button">Меню</button>
+            </div>
 
-        </nav>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+                <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
       </div>
+      <div class="page-header__wrapper">
+        <p class="page-header__title">Фотографии<br> пользователей</p>
       </div>
-      </header>
     </header>
     <main>
-    <div class="post">
-    <div class="post__wrapper">
-      <p class="page-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    </div>
-    <section class="post__item--panorama">
+      <div class="post">
+        <div class="post__wrapper">
+          <p class="page-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <section class="post__item--panorama">
 
-      <div class="post__photo">
-        <a href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Photo"></a>
-        <div class="post__wrapper--panorama">
-          <div class="post__label">Панорама дня</div>
+          <div class="post__photo">
+            <a href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Photo"></a>
+
+          </div>
+          <div class="post__panorama">
+            <div class="post__panorama-container">
+            <div class="post__label">Панорама дня</div>
+            </div>
+          </div>
+          <div class="post__wrapper">
+            <div class="post__content">
+              <p class="post__author">Анна</p>
+              <time class="post__date" datetime="">(5 минут назад)</time>
+              <p class="post__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <p class="post__likes">Нравится: 215</p>
+            </div>
+          </div>
+        </section>
+        <div class="post__wrapper">
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
+              <!--У ссылки тут есть какие-то дефолтные отступы, кот. у меня не получается сбросить-->
+            </div>
+            <div class="post__content">
+              <p class="post__author">Левон</p>
+              <time class="post__date" datetime="">(5 часов назад)</time>
+              <p class="post__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="post__likes">Нравится: 356</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Антон</p>
+              <time class="post__date" datetime="">(12 часов назад)</time>
+              <p class="post__desc">Соседи будут рады!</p>
+              <p class="post__likes">Нравится: 666</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Борис</p>
+              <time class="post__date" datetime="">(20 часов назад)</time>
+              <p class="post__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="post__likes">Нравится: 215</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Сергей</p>
+              <time class="post__date" datetime="">(25 часов назад)</time>
+              <p class="post__desc">Самая кубанская в мире!</p>
+              <p class="post__likes">Нравится: 4</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Максим</p>
+              <time class="post__date" datetime="">(40 часов назад)</time>
+              <p class="post__desc">Где снег-то?</p>
+              <p class="post__likes">Нравится: 150</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Надежда</p>
+              <time class="post__date" datetime="">(45 часов назад)</time>
+              <p class="post__desc">Всем GM и взаимные лайки!</p>
+              <p class="post__likes">Нравится: 2560</p>
+            </div>
+          </section>
+          <p class="page-intro">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        </div>
-      <div class="post__wrapper">
-      <div class="post__content">
-        <p class="post__author">Анна</p>
-        <time class="post__date" datetime="">(5 минут назад)</time>
-        <p class="post__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-        <p class="post__likes">Нравится: 215</p>
       </div>
-    </div>
-    </section>
-    <div class="post__wrapper">
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo"></a> <!--У ссылки тут есть какие-то дефолтные отступы, кот. у меня не получается сбросить-->
-      </div>
-      <div class="post__content">
-        <p class="post__author">Левон</p>
-        <time class="post__date" datetime="">(5 часов назад)</time>
-        <p class="post__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <p class="post__likes">Нравится: 356</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Антон</p>
-        <time class="post__date" datetime="">(12 часов назад)</time>
-        <p class="post__desc">Соседи будут рады!</p>
-        <p class="post__likes">Нравится: 666</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Борис</p>
-        <time class="post__date" datetime="">(20 часов назад)</time>
-        <p class="post__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <p class="post__likes">Нравится: 215</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Сергей</p>
-        <time class="post__date" datetime="">(25 часов назад)</time>
-        <p class="post__desc">Самая кубанская в мире!</p>
-        <p class="post__likes">Нравится: 4</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Максим</p>
-        <time class="post__date" datetime="">(40 часов назад)</time>
-        <p class="post__desc">Где снег-то?</p>
-        <p class="post__likes">Нравится: 150</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Надежда</p>
-        <time class="post__date" datetime="">(45 часов назад)</time>
-        <p class="post__desc">Всем GM и взаимные лайки!</p>
-        <p class="post__likes">Нравится: 2560</p>
-      </div>
-    </section>
-    <p class="page-intro">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-  </div>
-  </div>
-    <form class="submit-photo">
-      <div class="submit-photo__container">
-      <div class="submit-photo__wrapper">
-      <div class="submit-photo__photo">
-        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Your photo">
-      </div>
-      <div class="submit-photo__tools-container">
-      <div class="submit-photo__tools">
-        <div class="submit-photo__crop">
-          <a class="tool tool-icon--crop tool-icon--active">Кадрировать</a>
-          <div class="range-controls">
-               <div class="scale"></div>
-               <div class="range-toggle range-toggle--crop"></div>
-         </div>
-        </div>
-        <div class="submit-photo__filter"
-          <a class="tool tool-icon--filter" href="#">Фильтр</a>
-          <div class="range-controls range-controls--hidden">
-             <div class="scale scale"></div>
-             <div class="range-toggle range-toggle--filter"></div>
+      <form class="submit-photo">
+        <div class="submit-photo__container">
+          <div class="submit-photo__wrapper">
+            <div class="submit-photo__photo">
+              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Your photo">
+            </div>
+            <div class="submit-photo__tools-container">
+              <div class="submit-photo__tools">
+                <div class="submit-photo__crop">
+                  <a class="tool tool-icon--crop tool-icon--active">Кадрировать</a>
+                  <div class="range-controls">
+                    <div class="scale"></div>
+                    <div class="range-toggle range-toggle--crop"></div>
+                  </div>
+                </div>
+                <div class="submit-photo__filter" <a class="tool tool-icon--filter" href="#">Фильтр</a>
+                  <div class="range-controls range-controls--hidden">
+                    <div class="scale scale"></div>
+                    <div class="range-toggle range-toggle--filter"></div>
+                  </div>
+                </div>
+                <div class="submit-photo__brightness" <a class="tool tool-icon--brightness" href="#">Яркость</a>
+                  <div class="range-controls">
+                    <div class="scale scale"></div>
+                    <div class="range-toggle  range-toggle--brightness"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="submit-photo__buttons">
+                <button class="submit-photo__button submit-photo__button--submit" type="submit">Запостить</button>
+                <input class="submit-photo__button submit-photo__button--reset" type="reset" value="Отмена">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="submit-photo__brightness"
-          <a class="tool tool-icon--brightness" href="#">Яркость</a>
-          <div class="range-controls">
-             <div class="scale scale"></div>
-             <div class="range-toggle  range-toggle--brightness"></div>
-          </div>
-        </div>
-      </div>
-      <div class="submit-photo__buttons">
-      <button class="submit-photo__button submit-photo__button--submit" type="submit">Запостить</button>
-      <input class="submit-photo__button submit-photo__button--reset" type="reset" value="Отмена">
-      </div>
-    </div>
-    </div>
-  </div>
-    </form>
+      </form>
 
-  </main>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <section class="page-footer__logo">
@@ -170,34 +176,34 @@
         </section>
         <section class="page-footer__social">
           <span class="social-links">
-            <a class="social-link social-link--tw" href="#">Twitter</a>
-            <a class="social-link social-link--fb" href="#">Facebook</a>
-            <a class="social-link social-link--yt" href="#">Youtube</a>
-          </span>
+              <a class="social-link social-link--tw" href="#">Twitter</a>
+              <a class="social-link social-link--fb" href="#">Facebook</a>
+              <a class="social-link social-link--yt" href="#">Youtube</a>
+            </span>
         </section>
-          <section class="page-footer__copyright">
-            Разработано:
-            <a class="page-footer__academy-logo" href="https://htmlacademy.ru/" target="_blank"></a>
+        <section class="page-footer__copyright">
+          Разработано:
+          <a class="page-footer__academy-logo" href="https://htmlacademy.ru/" target="_blank"></a>
         </section>
       </div>
     </footer>
 
     <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
 
-  navMain.classList.remove('main-nav--nojs');
+      navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
 
   </body>

@@ -1,5 +1,5 @@
 .post {
-  margin-top: -200px;
+  // margin-top: -200px;
   background: @white;
   display: flex;
   flex-direction: column;
@@ -7,6 +7,9 @@
 
 .post__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .post__item {
@@ -21,22 +24,23 @@
   position: relative;
 }
 
+.post__panorama {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.post__panorama-container {
+  .container();
+}
+
 .post__item--panorama .post__photo {
-  // position: relative;
   text-align: center;
 }
 
 .post__item--panorama .post__photo img {
   width: 1200px
-}
-
-.post__wrapper--panorama {
-  background: yellow;
-  .container();
-  position: absolute;
-  top: 0;
-  right: 0;
-
 }
 
 .post__label {
@@ -54,6 +58,7 @@
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  float: right;
 }
 
 .post__content {
@@ -91,7 +96,7 @@
 
 @media @tablet-widths {
   .post {
-    margin-top: -400px;
+    // margin-top: -400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -100,6 +105,14 @@
   .post__item {
     text-align: left;
     width: 300px;
+  }
+
+  .post__wrapper {
+    .container();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
 }

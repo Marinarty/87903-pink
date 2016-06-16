@@ -1,9 +1,31 @@
 .page-header {
   background: @blue-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
   background-size: cover;
-  height: 460px;
+  // height: 460px;
   // position: relative;
   // z-index: -1;
+}
+
+
+.page-header__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: @white;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+}
+
+.page-header__title--to-left {
+  display: none;
+  float: left;
+  width: 250px;
+  // margin-left: 35px;
+  // margin-top: 90px;
 }
 
 // .page-header::after {
@@ -15,6 +37,9 @@
 //   width: 400px;
 //   height: 400px;
 // }
+.page-header__wrapper {
+  .container();
+}
 
 .page-header__inner-image {
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom left;
@@ -24,7 +49,8 @@
 
 @media @tablet-widths {
   .page-header {
-    height: 729px;
+    background: @blue-grey url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+    background-size: cover;
   }
 
   // .page-header::after {
@@ -39,19 +65,53 @@
     background-size: 470px;
   }
 
-  .page-header__menu {
-    height: 110px;
+  .page-header__title {
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 70px;
+    padding-bottom: 110px;
+    width: 500px;
   }
+
+  .page-header__title--to-left {
+    display: block;
+    width: 240px;
+    padding: 0;
+    margin-left: 35px;
+    margin-top: 90px;
+  }
+
 }
 
 @media @desktop-widths {
   .page-header {
-    height: 853px;
+    // height: 853px;
   }
+
   .page-header__inner-image {
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom;
     height: 743px;
     background-size: 555px;
     background-position: 350px 150px;
+  }
+  .menu {
+    background: rgba(29,38,49,.8);
+  }
+  .menu__wrapper {
+    .container();
+  }
+
+  .page-header__title {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    width: 800px;
+  }
+
+  .page-header__title--to-left {
+    display: block;
+    width: 240px;
+    margin-top: 140px;
+    margin-left: 35px;
+    padding: 0;
   }
 }
