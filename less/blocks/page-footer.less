@@ -3,7 +3,7 @@
   .clearfix();
 }
 
-.page-footer--mobile-main {
+.page-footer--hidden {
   display: none;
 }
 
@@ -69,14 +69,12 @@
   height: 35px;
 }
 
-.page-footer__map {
-  background: grey;
-  height: 200px;
-  margin-top: 40px;
-}
-
 @media @tablet-widths {
   .page-footer__wrapper {
+    display: block;
+  }
+
+  .page-footer--hidden {
     display: block;
   }
 
@@ -91,10 +89,6 @@
     text-align: left;
   }
 
-  .page-footer__map {
-    height: 375px;
-    margin-top: 0;
-  }
   .page-footer__logo,
   .page-footer__social,
   .page-footer__copyright {
@@ -108,8 +102,5 @@
 @media @desktop-widths {
   .page-footer__wrapper {
     padding: 60px 0;
-  }
-  .page-footer__map {
-    height: 510px;
   }
 }
