@@ -5,168 +5,250 @@
     <title>Фотографии пользователей</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
+  <body>
     <header class="page-header">
-      <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <div class="main-nav__menu-container">
+      <div class="menu">
+  <div class="menu__wrapper">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__menu-container">
+          <a class="main-nav__logo" href="index.html">Pink</a>
+        <button class="main-nav__toggle" type="button">Меню</button>
+        </div>
 
-          <div class="main-nav_logo">
-            <img src="img/logo-pink-white-mobile.svg" width="78" height="24" alt="Pink">
-          </div>
-          <button class="main-nav__toggle" type="button">Меню</button>
-          </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+          </ul>
+        </div>
 
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html">Главная</a></li>
-              <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-            </ul>
-          </div>
-
-        </nav>
+      </nav>
+    </div>
+  </div>
+      <div class="page-header__wrapper">
+        <p class="page-header__title">Фотографии<br> пользователей</p>
       </div>
-      </div>
-      </header>
     </header>
     <main>
-    <div class="post">
-    <div class="post__wrapper">
-      <p class="page-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    </div>
-    <section class="post__item--panorama">
+      <div class="post">
+        <div class="post__wrapper">
+          <p class="page-intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <section class="post__item--panorama">
 
-      <div class="post__photo">
-        <a href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Photo"></a>
-        <div class="post__wrapper--panorama">
-          <div class="post__label">Панорама дня</div>
-        </div>
-        </div>
-      <div class="post__wrapper">
-      <div class="post__content">
-        <p class="post__author">Анна</p>
-        <time class="post__date" datetime="">(5 минут назад)</time>
-        <p class="post__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-        <p class="post__likes">Нравится: 215</p>
-      </div>
-    </div>
-    </section>
-    <div class="post__wrapper">
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Photo"></a> <!--У ссылки тут есть какие-то дефолтные отступы, кот. у меня не получается сбросить-->
-      </div>
-      <div class="post__content">
-        <p class="post__author">Левон</p>
-        <time class="post__date" datetime="">(5 часов назад)</time>
-        <p class="post__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <p class="post__likes">Нравится: 356</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Антон</p>
-        <time class="post__date" datetime="">(12 часов назад)</time>
-        <p class="post__desc">Соседи будут рады!</p>
-        <p class="post__likes">Нравится: 666</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Борис</p>
-        <time class="post__date" datetime="">(20 часов назад)</time>
-        <p class="post__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <p class="post__likes">Нравится: 215</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Сергей</p>
-        <time class="post__date" datetime="">(25 часов назад)</time>
-        <p class="post__desc">Самая кубанская в мире!</p>
-        <p class="post__likes">Нравится: 4</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Максим</p>
-        <time class="post__date" datetime="">(40 часов назад)</time>
-        <p class="post__desc">Где снег-то?</p>
-        <p class="post__likes">Нравится: 150</p>
-      </div>
-    </section>
-    <section class="post__item">
-      <div class="post__photo">
-        <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo"></a>
-      </div>
-      <div class="post__content">
-        <p class="post__author">Надежда</p>
-        <time class="post__date" datetime="">(45 часов назад)</time>
-        <p class="post__desc">Всем GM и взаимные лайки!</p>
-        <p class="post__likes">Нравится: 2560</p>
-      </div>
-    </section>
-    <p class="page-intro">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-  </div>
-  </div>
-    <form class="submit-photo">
-      <div class="submit-photo__container">
-      <div class="submit-photo__wrapper">
-      <div class="submit-photo__photo">
-        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Your photo">
-      </div>
-      <div class="submit-photo__tools-container">
-      <div class="submit-photo__tools">
-        <div class="submit-photo__crop">
-          <a class="tool tool-icon--crop tool-icon--active">Кадрировать</a>
-          <div class="range-controls">
-               <div class="scale"></div>
-               <div class="range-toggle range-toggle--crop"></div>
-         </div>
-        </div>
-        <div class="submit-photo__filter"
-          <a class="tool tool-icon--filter" href="#">Фильтр</a>
-          <div class="range-controls range-controls--hidden">
-             <div class="scale scale"></div>
-             <div class="range-toggle range-toggle--filter"></div>
+          <div class="post__photo">
+            <a href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+           </picture>
+           </a>
+          </div>
+          <div class="post__panorama">
+            <div class="post__panorama-container">
+            <div class="post__label">Панорама дня</div>
+            </div>
+          </div>
+          <div class="post__wrapper">
+            <div class="post__content post__content--panorama">
+              <p class="post__author">Анна <span class="post__date">(5 минут назад)</span></p>
+              <p class="post__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <p class="post__likes">Нравится: 215</p>
+            </div>
+          </div>
+        </section>
+        <div class="post__wrapper">
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg 2x" alt="Панорама дня">
+             </picture>
+             </a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Левон <span class="post__date">(5 часов назад)</span></p>
+              <p class="post__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="post__likes">Нравится: 356</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 2x" alt="Фото">
+             </picture>
+             </a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Антон <span class="post__date">(12 часов назад)</span></p>
+              <p class="post__desc">Соседи будут рады!</p>
+              <p class="post__likes">Нравится: 666</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg 2x" alt="Фото">
+             </picture>
+             </a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Борис <span class="post__date">(20 часов назад)</span></p>
+              <p class="post__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="post__likes">Нравится: 215</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#">
+               <picture>
+                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                 <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                 <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@1x.jpg 2x" alt="Фото">
+               </picture>
+             </a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Сергей <span class="post__date">(25 часов назад)</span></p>
+              <p class="post__desc">Самая кубанская в мире!</p>
+              <p class="post__likes">Нравится: 4</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#">
+               <picture>
+                 <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                 <source media="(min-width: 768px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                 <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@1x.jpg 2x" alt="Фото">
+               </picture>
+             </a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Максим <span class="post__date">(40 часов назад)</span></p>
+              <p class="post__desc">Где снег-то?</p>
+              <p class="post__likes">Нравится: 150</p>
+            </div>
+          </section>
+          <section class="post__item">
+            <div class="post__photo">
+              <a href="#">
+               <picture>
+                 <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                 <source media="(min-width: 768px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                 <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@1x.jpg 2x" alt="Фото">
+               </picture>
+             </a>
+            </div>
+            <div class="post__content">
+              <p class="post__author">Надежда <span class="post__date">(45 часов назад)</span></p>
+              <p class="post__desc">Всем GM и взаимные лайки!</p>
+              <p class="post__likes">Нравится: 2560</p>
+            </div>
+          </section>
+          <div class="post__wrapper">
+          <p class="page-intro page-intro--bottom">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
           </div>
         </div>
-        <div class="submit-photo__brightness"
-          <a class="tool tool-icon--brightness" href="#">Яркость</a>
-          <div class="range-controls">
-             <div class="scale scale"></div>
-             <div class="range-toggle  range-toggle--brightness"></div>
+      </div>
+      <form class="submit-photo">
+        <div class="submit-photo__container">
+          <div class="submit-photo__wrapper">
+            <div class="submit-photo__photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@1x.jpg 2x" alt="Ваше фото">
+              </picture>
+            </div>
+            <div class="submit-photo__tools-container">
+              <div class="submit-photo__editor-container">
+
+
+              <div class="submit-photo__tool-editor">
+                  <a class="submit-photo__tool submit-photo__tool--crop tool-icon--active">
+                    <svg fill="#d22856" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    </svg>
+                  </a>
+                  <div class="submit-photo__bar submit-photo__bar--hidden">
+                    <div class="scale"></div>
+                    <div class="range-toggle range-toggle--crop-2 range-toggle--crop-3"></div>
+                  </div>
+              </div>
+
+              <div class="submit-photo__tool-editor">
+                <a class="submit-photo__tool submit-photo__tool--filter" href="#">
+                  <svg fill="#b5b9be" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+                  	s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+                  	c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                  </svg>
+                </a>
+                <div class="submit-photo__bar submit-photo__bar--hidden">
+                  <div class="scale"></div>
+                  <div class="range-toggle range-toggle--filter"></div>
+                </div>
+              </div>
+
+              <div class="submit-photo__tool-editor">
+                <a class="submit-photo__tool submit-photo__tool--brightness" href="#">
+                  <svg fill="#b5b9be" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                  	 xml:space="preserve">
+                  <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+                  	S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+                  	C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </a>
+                <div class="submit-photo__bar submit-photo__bar--hidden">
+                  <div class="scale"></div>
+                  <div class="range-toggle  range-toggle--brightness"></div>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="submit-photo__bar submit-photo__bar--active">
+                <div class="scale"></div>
+                <div class="range-toggle range-toggle--crop-1"></div>
+              </div>
+
+              <div class="submit-photo__buttons">
+                <button class="submit-photo__button submit-photo__button--submit" type="submit">Запостить</button>
+                <input class="submit-photo__button submit-photo__button--reset" type="reset" value="Отмена">
+              </div>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="submit-photo__buttons">
-      <button class="submit-photo__button submit-photo__button--submit" type="submit">Запостить</button>
-      <input class="submit-photo__button submit-photo__button--reset" type="reset" value="Отмена">
-      </div>
-    </div>
-    </div>
-  </div>
-    </form>
+      </form>
 
-  </main>
+    </main>
     <footer class="page-footer">
+    </section>
       <div class="page-footer__wrapper">
         <section class="page-footer__logo">
-          <a href="index.html"><img src="#" width="" height="" alt="Pink"></a>
+          <a class="page-footer__logo-pink" href="index.html">
+
+          </a>
         </section>
         <section class="page-footer__social">
           <span class="social-links">
@@ -175,30 +257,26 @@
             <a class="social-link social-link--yt" href="#">Youtube</a>
           </span>
         </section>
-          <section class="page-footer__copyright">
-            Разработано:
-            <a class="page-footer__academy-logo" href="https://htmlacademy.ru/" target="_blank"></a>
+        <section class="page-footer__copyright">
+          <div class="page-footer__copyright-block">
+          <span>Разработано</span>
+
+            <a href="https://htmlacademy.ru/" target="_blank" alt="HTML Academy">
+            <svg class="page-footer__academy-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
+            	l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
+            	l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
+            	l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65
+            	l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036
+            	v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+            </a>
+          </div>
+
         </section>
       </div>
     </footer>
-
-    <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-
-  navMain.classList.remove('main-nav--nojs');
-
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
-
-
+  <script src="js/menu.js"></script>
   </body>
 </html>

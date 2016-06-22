@@ -2,8 +2,70 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding-top: 54px;
-  padding-bottom: 54px;
-  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 8px;
+  paddig-right: 8px;
   background: @white;
+  margin: 0 auto;
+}
+
+.page-intro--bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-intro--form {
+  padding-left: 0;
+  paddig-right: 0;
+  padding-bottom: 35px;
+}
+
+.page-intro--second-line {
+  display: none;
+}
+
+
+@media @tablet-widths {
+  .page-intro {
+    font-size: 18px;
+    padding-top: 95px;
+    padding-bottom: 75px;
+    width: 440px;
+  }
+
+  .page-intro--bottom {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .page-intro--form {
+    padding-left: 0;
+    paddig-right: 0;
+    padding-bottom: 0;
+    width: 490px;
+  }
+
+  .page-intro--second-line {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 67px;
+  }
+}
+
+@media @desktop-widths {
+  .page-intro {
+    width: 800px;
+  }
+
+  .page-intro--bottom {
+    padding-bottom: 65px;
+  }
+
+  .page-intro--second-line {
+    display: inline-block;
+    width: 322px;
+    padding-bottom: 80px;
+  }
+
 }
