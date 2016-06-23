@@ -35,8 +35,8 @@
 
 .download__markets {
   display: block;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 35px;
+  margin-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -44,8 +44,12 @@
 
 .download__markets a {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 20px;
   vertical-align: middle;
+}
+
+.download__markets a:last-child {
+  margin-right: 0;
 }
 
 .download__markets .markets-link--ios {
@@ -59,8 +63,8 @@
 }
 
 .download__markets .markets-link--windows {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .download__desc {
@@ -79,7 +83,7 @@
   }
 
   .download__desc {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     font-weight: 300;
   }
@@ -89,10 +93,14 @@
   }
 
   .download__markets {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 30px;
   }
-}  
+
+  .download__markets .markets-link--android {
+    opacity: 0.5;
+  }
+}
 
 @media @desktop-widths {
 
@@ -101,11 +109,25 @@
     line-height: 18px;
     padding: 15px 15px;
   }
+
   .download .download--left {
     margin-top: -430px;
   }
+
   .download__markets {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 15px;
+  }
+
+  .download__markets a {
+    margin-right: 25px;
+  }
+
+  .download__desc {
+    font-size: 17px;
+  }
+
+  .download__markets .markets-link--android {
+    opacity: 1;
   }
 }

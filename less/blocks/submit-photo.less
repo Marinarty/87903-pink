@@ -17,6 +17,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left:  30px;
+  padding-top: 40px;
 }
 
 .submit-photo__buttons {
@@ -25,6 +29,7 @@
   flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-top: 1px solid #dddfe0;
 }
 
 .submit-photo__button {
@@ -66,24 +71,52 @@
   background-color: #b5b9be;
 }
 
-.submit-photo__controls {
-  border-bottom: 1px solid #dddfe0;
+.submit-photo__tool-editor {
+  width: 55px;
+  text-align: center;
 }
-// кнопки контроля
-.range-controls {
+
+.submit-photo__tool-editor svg {
+  display: block;
+}
+
+.submit-photo__tool-editor:last-child svg {
+  padding-top: 8px;
+}
+
+.submit-photo__tools-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 35px;
+}
+
+.submit-photo__editor-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.submit-photo__bar {
   position: relative;
   margin: 0 auto;
+  width: 240px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.range-controls .scale {
+.submit-photo__bar .scale {
   height: 2px;
   background: #000000;
-  width: 237px;
+  width: 100%;
 }
 
-.range-controls .range-toggle {
+.submit-photo__bar .range-toggle {
   position: absolute;
-  top: -6px;
+  top: 28px;
   width: 10px;
   height: 10px;
   background: @white;
@@ -93,16 +126,35 @@
   left: 80%;
 }
 
-.range-controls .range-toggle--brightness {
-  left: 60%;
+.submit-photo__bar .range-toggle--crop-1 {
+  left: 75%;
+}
+
+.submit-photo__bar .range-toggle--crop-2 {
+  left: 70%;
+}
+
+.submit-photo__bar .range-toggle--brightness {
+  left: 50%;
+}
+
+.submit-photo__bar .range-toggle--filter {
+  left: 20%;
 }
 
 .range-toggle:hover {
   background: @pink;
 }
 
-// кнопки контроля конец
+.submit-photo__bar--hidden {
+  display: none;
+}
 
+.submit-photo__tool--filter:hover svg,
+.submit-photo__tool--brightness:hover svg,
+.submit-photo__tool--brightness:hover path {
+  fill: #8d949b;
+}
 
 @media @tablet-widths {
   .submit-photo__wrapper {
@@ -116,30 +168,112 @@
 
  .submit-photo__tools-container {
    width: 300px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding-top: 0;
+   padding-left: 27px;
+   box-sizing: border-box;
  }
 
-  .submit-photo__tools .tools {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+ .submit-photo__tool-editor {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+   border-bottom: 1px solid #dddfe0;
+   margin-top: 22px;
+ }
+
+ .submit-photo__tool-editor:first-child {
+   margin-top: 10px;
+ }
+
+ .submit-photo__bar--active {
+   display: none;
+ }
+
+ .submit-photo__tools {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding: 0;
+   width: 70px;
+ }
+
+ .submit-photo__tool-editor:last-child svg {
+   padding-top: 0;
+   padding-left: 5px;
+ }
+
+ .submit-photo__range-controls {
+   width: 200px;
+ }
+
+ .submit-photo__bar--hidden {
+   display: block;
+ }
+
+ .submit-photo__bar {
+   padding-top: 10px;
+   padding-bottom: 35px;
+   width: 200px;
+ }
+
+ .submit-photo__bar .range-toggle {
+   top: 5px;
+ }
+
+  .submit-photo__tool--crop svg,
+  .submit-photo__tool--filter svg {
+    width: 25px;
+    height: 25px;
   }
+
+  .submit-photo__tool--brightness svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .submit-photo__tool--filter svg,
+  .submit-photo__tool--brightness svg,
+  .submit-photo__tool--brightness path {
+    fill: @pink;
+  }
+
   .submit-photo__buttons {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    border-top: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: auto;
   }
 }
 
 @media @desktop-widths {
+  .submit-photo {
+    background-color: @white;
+  }
 
   .submit-photo__wrapper {
     padding-left: 80px;
     padding-right: 60px;
+    margin-bottom: 30px;
+    background-color: @grey;
   }
 
   .submit-photo__tools-container {
     width: 410px;
     justify-content: space-between;
+    padding-left: 0;
   }
 
   .submit-photo__buttons {
@@ -147,9 +281,50 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
   .submit-photo__button {
     width: 185px;
+  }
+
+  .submit-photo__button--reset {
+    margin-top: 0;
+  }
+
+  .submit-photo__tool--crop svg,
+  .submit-photo__tool--filter svg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .submit-photo__tool--brightness svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .submit-photo__bar {
+    width: 290px;
+    padding-top: 23px;
+  }
+
+  .submit-photo__bar .range-toggle {
+    top: 16px;
+  }
+
+  .submit-photo__tool-editor:first-child {
+    margin-top: 0;
+  }
+
+  .submit-photo__tool-editor {
+      margin-top: 10px;
+  }
+
+  .submit-photo__tool-editor svg {
+    padding-right: 15px;
+  }
+
+  .range-toggle--crop-3 {
+    left: 50%;
   }
 
 }

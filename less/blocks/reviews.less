@@ -4,7 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
   display: block;
 }
 
@@ -57,7 +57,7 @@
 
 .reviews__slider-controls {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   left: 50%;
   z-index: 20;
   font-size: 0;
@@ -77,6 +77,14 @@
   border: 3px solid @white;
 }
 
+.reviews__slider-controls label:hover {
+  background: #7e868f;
+}
+
+.reviews__slider-controls label:active {
+  background: #e9ebec;
+}
+
 .reviews__author {
   font-size: 18px;
   line-height: 30px;
@@ -91,7 +99,33 @@
   display: none;
 }
 
+.reviews__wrapper {
+  position: relative;
+}
 
+.reviews__arrow {
+  text-decoration: none;
+  position: absolute;
+  top: 14%;
+}
+
+.reviews__arrow--left {
+  left: 0;
+}
+
+.reviews__arrow--right {
+  right: 0;
+}
+
+.reviews__arrow--left svg:hover,
+.reviews__arrow--right svg:hover {
+  fill: #7e868f;
+}
+
+.reviews__arrow--left svg:active,
+.reviews__arrow--right svg:active {
+  fill: #e9ebec;
+}
 
 @media @tablet-widths {
   .reviews__author-description {
@@ -104,20 +138,25 @@
     order: 2;
   }
   .reviews {
-    padding-top: 130px;
-    padding-bottom: 55px;
+    padding-top: 75px;
+    padding-bottom: 60px;
   }
   .reviews__item .reviews__text {
     font-size: 18px;
   }
   .reviews__author {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
   }
   .reviews__author-description {
     font-size: 14px;
     line-height: 30px;
+  }
+
+  .reviews__slider-controls {
+    bottom: -55px;
+    left: 52%;
   }
 }
 
@@ -125,16 +164,29 @@
   .reviews__slider-controls {
     display: none;
   }
+
   .reviews {
-    padding-top: 185px;
-    padding-bottom: 55px;
+    padding-top: 190px;
+    padding-bottom: 10px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top 75px center;
   }
   .reviews__author {
     font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 2px;
   }
   .reviews__author-description {
     font-size: 18px;
+  }
+
+  .reviews__arrow {
+    display: block;
+  }
+
+  .reviews__item .reviews__text {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
