@@ -7,6 +7,15 @@
     }
 }
 
+.page-header--bg-back-to-top {
+  background: @blue-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background-size: cover;
+  @media @retina {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 700px auto;
+    }
+}
+
 .page-header__title {
   font-size: 24px;
   line-height: 27px;
@@ -68,6 +77,15 @@
       }
   }
 
+  .page-header--bg-back-to-top {
+    background: @blue-grey url("../img/bg-back-tablet@1x.jpg") no-repeat top;
+    background-size: cover;
+    @media @retina {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+        background-size: 1200px auto;
+      }
+  }
+
   .page-header__inner-image {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom right -45px;
     height: 620px;
@@ -111,11 +129,19 @@
       }
   }
 
+  .page-header--bg-back-to-top {
+    background: @blue-grey url("../img/bg-back-desktop@1x.jpg") no-repeat top;
+    background-size: cover;
+    @media @retina {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-size: 2560px auto;
+      }
+  }
+
   .page-header__inner-image {
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom right -125px;
     height: 743px;
     background-size: 1050px;
-    // background-position: 350px 150px;
     @media @retina {
         background-image: url("../img/iphone-hand-desktop@2x.jpg");
         background-size: 1050px auto;
@@ -125,7 +151,7 @@
   .page-header__menu {
     background: rgba(29,38,49,.8);
   }
-  
+
   .page-header__menu-wrapper {
     .container();
   }
