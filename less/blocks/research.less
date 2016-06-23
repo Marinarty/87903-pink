@@ -7,17 +7,18 @@
 .research__wrapper {
   .container();
   .clearfix();
+  position: relative;
 }
 
 .research__block {
   float: right;
   width: 310px;
-  margin-top: 95px;
+  margin-top: 100px;
 }
 
 .research b {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 35px;
   font-weight: 700;
   color: #000000;
   display: block;
@@ -25,7 +26,8 @@
 }
 
 .research p {
-  margin-top: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .research a {
@@ -36,28 +38,75 @@
   .research {
     display: block;
   }
+
+.research__wrapper::before {
+  content: "24";
+  position: absolute;
+  top: 115px;
+  left: 15px;
+  display: block;
+  padding-top: 70px;
+  width: 180px;
+  height: 105px;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 700;
+  color: @pink;
+  background-color: @grey;
+  border: 15px solid @pink;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.research__wrapper {
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: left 0 top 60px;
+  background-size: 240px;
+  padding-bottom: 50px;
+}
 }
 
 @media @desktop-widths {
   .research {
     background: @grey;
   }
+
+  .research__wrapper::before {
+    top: 70px;
+    left: 25px;
+    padding-top: 90px;
+    width: 220px;
+    height: 130px;
+    font-size: 120px;
+  }
+
+  .research__wrapper {
+    background-size: 300px;
+    background-position: left 0 top 0;
+    padding-bottom: 0;
+  }
+
   .research__block {
     width: 570px;
     margin-top: 90px;
     margin-bottom: 110px;
   }
+
   .research b {
     font-size: 30px;
     line-height: 30px;
     width: 300px;
   }
+
   .research p {
     font-size: 18px;
     line-height: 30px;
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    margin-right: 50px
   }
+
   .research a {
     font-size: 18px;
     line-height: 30px;

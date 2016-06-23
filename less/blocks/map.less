@@ -1,18 +1,23 @@
 .map {
-  background: grey;
   height: 200px;
   margin-top: 40px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
+  background-size: cover;
 }
 
 @media @tablet-widths {
   .map {
-    height: 375px;
+    height: 400px;
     margin-top: 0;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
   }
 }
 
 @media @desktop-widths {
   .map {
-    height: 510px;
+    height: 500px;
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat center;
+    background-size: cover;
   }
 }

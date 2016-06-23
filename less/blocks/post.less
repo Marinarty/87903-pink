@@ -1,5 +1,4 @@
 .post {
-  // margin-top: -200px;
   background: @white;
   display: flex;
   flex-direction: column;
@@ -39,14 +38,7 @@
   text-align: center;
 }
 
-.post__item--panorama .post__photo img {
-  width: 1200px
-}
-
 .post__label {
-  // position: absolute;
-  // top: 0;
-  // right: 20px;
   width: 100px;
   background: @pink;
   color: @white;
@@ -68,11 +60,15 @@
   display: block;
   font-size: 14px;
   line-height: 24px;
-  padding-top: 25px;
+  padding-top: 11px;
   padding-left: 17px;
   padding-right: 17px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .post__author {
@@ -86,25 +82,55 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .post__likes {
   color: @pink;
-  margin-top: 13px;
+  margin-top: 10px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 30px;
 }
 
 
 @media @tablet-widths {
   .post {
-    // margin-top: -400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .post__label {
+    margin-top: 60px;
+  }
+
   .post__item {
     text-align: left;
     width: 300px;
+  }
+
+  .post__content {
+    flex-direction: column;
+    flex-grow: 20;
+    padding: 22px;
+  }
+
+  .post__content--panorama {
+    flex-direction: row;
+  }
+
+  .post__likes,
+  .post__desc {
+    width: 100%;
+  }
+
+  .post__likes {
+    background-position: right 13px top 35px;
+    padding-left: 0;
+    margin-top: auto;
+    padding-top: 30px;
   }
 
   .post__wrapper {
@@ -115,4 +141,50 @@
     justify-content: space-between;
   }
 
+  .post__content--panorama .post__likes {
+    order: 1;
+    width: auto;
+    padding: 0;
+    margin-left: auto;
+    padding-right: 45px;
+    background-position: right 13px top 5px;
+  }
+
+  .post__content--panorama .post__date {
+    order: 0;
+  }
+
+  .post__content--panorama .post__author {
+    order: -1;
+  }
+  .post__content--panorama .post__desc {
+    order: 2;
+  }
+
+}
+
+@media @desktop-widths {
+  .post__label {
+    margin-top: 55px;
+  }
+
+  // .post__content--panorama .post__likes {
+  //   order: 1;
+  //   width: auto;
+  //   padding: 0;
+  //   margin-left: auto;
+  //   padding-right: 50px;
+  //   background-position: right;
+  // }
+  //
+  // .post__content--panorama .post__date {
+  //   order: 0;
+  // }
+  //
+  // .post__content--panorama .post__author {
+  //   order: -1;
+  // }
+  // .post__content--panorama .post__desc {
+  //   order: 2;
+  // }
 }
