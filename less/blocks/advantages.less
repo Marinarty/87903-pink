@@ -12,7 +12,7 @@
   .clearfix();
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 510px;
   padding-bottom: 300px;
-  @media @retina {
+  @media @retina-1, @retina-2 {
       background-image: url("../img/iphone-screen-mobile@2x.png");
       background-size: 157px auto;
     }
@@ -59,13 +59,14 @@
   .advantages {
     .clearfix();
     }
+
   .advantages__wrapper  {
     background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
     background-size: 268px;
     background-position: 0px 10px ;
     padding-bottom: 0;
-    @media @retina {
-        background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    @media @retina-1, @retina-2 {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
         background-size: 268px auto;
       }
   }
@@ -74,6 +75,9 @@
 @media @desktop-widths {
   .advantages__wrapper  {
     background: none;
+    @media @retina-1, @retina-2 {
+        background: none;
+      }
   }
 
   .advantages__items {
@@ -91,7 +95,7 @@
 
   .advantages__item--1 {
     background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
-    @media @retina {
+    @media @retina-1, @retina-2 {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
       background-size: 292px auto;
     }
@@ -99,7 +103,7 @@
 
   .advantages__item--2 {
       background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center top;
-      @media @retina {
+      @media @retina-1, @retina-2 {
         background-image: url("../img/iphone-screen-2-desktop@2x.png");
         background-size: 292px auto;
       }
@@ -107,7 +111,7 @@
 
   .advantages__item--3 {
       background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center top;
-      @media @retina {
+      @media @retina-1, @retina-2 {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
         background-size: 292px auto;
       }
@@ -120,6 +124,7 @@
     line-height: 30px;
     margin-top: 25px;
   }
+
   .advantages__item b {
     font-size: 30px;
     line-height: 30px;
