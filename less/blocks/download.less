@@ -1,109 +1,108 @@
-.download__wrapper {
-  .container();
-}
-
 .download {
   color: @white;
   padding-top: 15px;
   padding-bottom: 13px;
   background: #1d2631;
-}
 
-.download__button {
-  display: block;
-  width: auto;
-  background-color: transparent;
-  border: 3px solid @white;
-  border-radius: 35px;
-  text-decoration: none;
-  color: @white;
-  padding: 15px 35px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight:  700;
-  text-align: center;
-}
+  &__wrapper {
+    .container();
+  }
 
-.download__button:hover {
-  background-color: @white;
-  color: @pink;
-}
+  &__button {
+    display: block;
+    width: auto;
+    background-color: transparent;
+    border: 3px solid @white;
+    border-radius: 35px;
+    text-decoration: none;
+    color: @white;
+    padding: 15px 35px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight:  700;
+    text-align: center;
+  }
 
-.download__button:active {
-  color: rgba(210, 40, 86, 0.5);
-}
+  &__button:hover {
+    background-color: @white;
+    color: @pink;
+  }
 
-.download__markets {
-  display: block;
-  margin-top: 35px;
-  margin-bottom: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
+  &__button:active {
+    color: rgba(210, 40, 86, 0.5);
+  }
 
-.download__markets a {
-  display: inline-block;
-  margin-right: 20px;
-  vertical-align: middle;
-}
+  &__markets {
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 
-.download__markets a:last-child {
-  margin-right: 0;
-}
+  &__markets a {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
 
-.download__markets .markets-link--ios {
-  width: 55px;
-  height: 55px;
-}
+  &__markets a:last-child {
+    margin-right: 0;
+  }
 
-.download__markets .markets-link--android {
-  width: 50px;
-  height: 50px;
-}
+  &__markets .markets-link--ios {
+    width: 55px;
+    height: 55px;
+  }
 
-.download__markets .markets-link--windows {
-  width: 45px;
-  height: 45px;
-}
+  &__markets .markets-link--android {
+    width: 50px;
+    height: 50px;
+  }
 
-.download__desc {
-  text-align: center;
+  &__markets .markets-link--windows {
+    width: 45px;
+    height: 45px;
+  }
+
+  &__desc {
+    text-align: center;
+  }
 }
 
 @media @tablet-widths {
   .download {
     background: transparent;
-  }
 
-  .download .download--left {
-    margin-top: -380px;
-    background: transparent;
-    width: 300px;
-  }
+    & .download--left {
+      margin-top: -380px;
+      background: transparent;
+      width: 300px;
+    }
 
-  .download__desc {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 300;
-  }
+    &__desc {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 300;
+    }
 
-  .download__button {
-    padding: 15px 40px;
-  }
+    &__button {
+      padding: 15px 40px;
+    }
 
-  .download__markets {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
+    &__markets {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
 
-  .download__markets .markets-link--android {
-    opacity: 0.5;
+    &__markets .markets-link--android {
+      opacity: 0.5;
+    }
   }
 }
 
 @media @desktop-widths {
-
   .download__button {
     font-size: 21px;
     line-height: 18px;

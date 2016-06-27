@@ -2,21 +2,20 @@
   background: @white;
   display: none;
   text-align: left;
-}
 
-.research__wrapper {
+&__wrapper {
   .container();
   .clearfix();
   position: relative;
 }
 
-.research__block {
+&__block {
   float: right;
   width: 310px;
   margin-top: 100px;
 }
 
-.research b {
+& b {
   font-size: 30px;
   line-height: 35px;
   font-weight: 700;
@@ -25,21 +24,21 @@
   width: 170px;
 }
 
-.research p {
+& p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.research a {
+& a {
   color: @pink;
+}
 }
 
 @media @tablet-widths {
   .research {
     display: block;
-  }
 
-  .research__wrapper::before {
+  &__wrapper::before {
     content: "24";
     position: absolute;
     top: 115px;
@@ -58,7 +57,7 @@
     z-index: 2;
   }
 
-  .research__wrapper {
+  &__wrapper {
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: left 0 top 60px;
@@ -66,49 +65,50 @@
     padding-bottom: 50px;
   }
 }
+}
 
 @media @desktop-widths {
   .research {
     background: @grey;
-  }
 
-  .research__wrapper::before {
-    top: 70px;
-    left: 25px;
-    padding-top: 90px;
-    width: 220px;
-    height: 130px;
-    font-size: 120px;
-  }
+    &__wrapper::before {
+      top: 70px;
+      left: 25px;
+      padding-top: 90px;
+      width: 220px;
+      height: 130px;
+      font-size: 120px;
+    }
 
-  .research__wrapper {
-    background-size: 300px;
-    background-position: left 0 top 0;
-    padding-bottom: 0;
-  }
+    &__wrapper {
+      background-size: 300px;
+      background-position: left 0 top 0;
+      padding-bottom: 0;
+    }
 
-  .research__block {
-    width: 570px;
-    margin-top: 90px;
-    margin-bottom: 110px;
-  }
+    &__block {
+      width: 570px;
+      margin-top: 90px;
+      margin-bottom: 110px;
+    }
 
-  .research b {
-    font-size: 30px;
-    line-height: 30px;
-    width: 300px;
-  }
+    & b {
+      font-size: 30px;
+      line-height: 30px;
+      width: 300px;
+    }
 
-  .research p {
-    font-size: 18px;
-    line-height: 30px;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    margin-right: 50px
-  }
+    & p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 25px;
+      margin-bottom: 30px;
+      margin-right: 50px
+    }
 
-  .research a {
-    font-size: 18px;
-    line-height: 30px;
+    & a {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }

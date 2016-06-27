@@ -5,77 +5,77 @@
   margin: 0 auto;
   background: @blue-grey;
   min-height: 66px;
-}
 
-.main-nav__menu-container {
-  .container();
-  position: relative;
-}
+  &__menu-container {
+    .container();
+    position: relative;
+  }
 
-.main-nav__logo {
-  font-size: 0;
-}
+  &__logo {
+    font-size: 0;
+  }
 
-.main-nav__logo::after {
-  content: "";
-  position: absolute;
-  width: 75px;
-  height: 23px;
-  top: 20px;
-  left: 0;
-  background: url("../img/logo-pink-white-mobile.svg") no-repeat center;
-}
+  &__logo::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 23px;
+    top: 20px;
+    left: 0;
+    background: url("../img/logo-pink-white-mobile.svg") no-repeat center;
+  }
 
-.main-nav__logo:hover::after {
-  background: url("../img/logo-pink-white-mobile-hover.svg") no-repeat center;
-}
+  &__logo:hover::after {
+    background: url("../img/logo-pink-white-mobile-hover.svg") no-repeat center;
+  }
 
-.main-nav__logo:active::after {
-  background: url("../img/logo-pink-white-mobile-active.svg") no-repeat center;
-}
+  &__logo:active::after {
+    background: url("../img/logo-pink-white-mobile-active.svg") no-repeat center;
+  }
 
-.main-nav__toggle {
-  float: right;
-  display: inline-block;
-  vertical-align: middle;
-  width: 60px;
-  height: 25px;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  z-index: 2;
-  font-size: 0;
-  cursor: pointer;
-  border: none;
-  background: transparent;
-}
+  &__toggle {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 2;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
 
-.main-nav--closed {
-  background: rgba(29,38,49,.8);
-}
+  &--closed {
+    background: rgba(29,38,49,.8);
+  }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff,
-              0 20px 0 0 #ffffff;
-}
+  &--closed &__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff,
+                0 20px 0 0 #ffffff;
+  }
 
-.main-nav--closed .main-nav__toggle:hover::before {
-  background-color: @pink;
-  box-shadow: 0 10px 0 0 @pink,
-              0 20px 0 0 @pink;
-}
+  &--closed &__toggle:hover::before {
+    background-color: @pink;
+    box-shadow: 0 10px 0 0 @pink,
+                0 20px 0 0 @pink;
+  }
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(210, 40, 86, 0.3);
-  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3),
-              0 20px 0 0 rgba(210, 40, 86, 0.3);
+  &--closed &__toggle:active::before {
+    background-color: rgba(210, 40, 86, 0.3);
+    box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3),
+                0 20px 0 0 rgba(210, 40, 86, 0.3);
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -185,33 +185,33 @@
 @media @tablet-widths {
   .main-nav {
     min-height: 110px;
-  }
 
-  .main-nav--opened .main-nav__wrapper {
-    top: 110px;
-  }
+    &--opened &__wrapper {
+      top: 110px;
+    }
 
-  .main-nav--nojs .main-nav__menu-container {
-    height: 110px;
-  }
+    &--nojs &__menu-container {
+      height: 110px;
+    }
 
-  .main-nav__logo::after {
-    width: 146px;
-    height: 40px;
-    top: 30px;
-    background: url("../img/logo-pink-white-tablet.svg") no-repeat center;
-  }
+    &__logo::after {
+      width: 146px;
+      height: 40px;
+      top: 30px;
+      background: url("../img/logo-pink-white-tablet.svg") no-repeat center;
+    }
 
-  .main-nav__logo:hover::after {
-    background: url("../img/logo-pink-white-tablet-hover.svg") no-repeat center;
-  }
+    &__logo:hover::after {
+      background: url("../img/logo-pink-white-tablet-hover.svg") no-repeat center;
+    }
 
-  .main-nav__logo:active::after {
-    background: url("../img/logo-pink-white-tablet-active.svg") no-repeat center;
-  }
+    &__logo:active::after {
+      background: url("../img/logo-pink-white-tablet-active.svg") no-repeat center;
+    }
 
-  .main-nav__toggle {
-    top: 45px;
+    &__toggle {
+      top: 45px;
+    }
   }
 }
 
@@ -276,6 +276,7 @@
     &:hover {
       color: @white;
     }
+
     &:hover::after {
           content: "";
           position: absolute;
@@ -285,9 +286,11 @@
           height: 2px;
           background: @white;
         }
+
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+
     &:active::after {
           display: none;
         }
@@ -297,6 +300,7 @@
       &:hover {
         color: @pink;
       }
+
       &:hover::after {
           content: "";
           position: absolute;
@@ -306,9 +310,11 @@
           height: 2px;
           background: @pink;
       }
+
       &:active {
         color: rgba(255, 255, 255, 0.3);
       }
+      
       &:active::after {
             display: none;
       }

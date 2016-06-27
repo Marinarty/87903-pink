@@ -8,23 +8,22 @@
   paddig-right: 8px;
   background: @white;
   margin: 0 auto;
-}
 
-.page-intro--bottom {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  &--bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-.page-intro--form {
-  padding-left: 0;
-  paddig-right: 0;
-  padding-bottom: 35px;
-}
+  &--form {
+    padding-left: 0;
+    paddig-right: 0;
+    padding-bottom: 35px;
+  }
 
-.page-intro--hidden-line {
-  display: none;
+  &--hidden-line {
+    display: none;
+  }
 }
-
 
 @media @tablet-widths {
   .page-intro {
@@ -32,44 +31,44 @@
     padding-top: 95px;
     padding-bottom: 75px;
     width: 440px;
-  }
 
-  .page-intro--bottom {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
+    &--bottom {
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
 
-  .page-intro--form {
-    padding-left: 0;
-    paddig-right: 0;
-    padding-bottom: 0;
-    width: 490px;
-    position: relative;
-  }
+    &--form {
+      padding-left: 0;
+      paddig-right: 0;
+      padding-bottom: 0;
+      width: 490px;
+      position: relative;
+    }
 
-  .page-intro--hidden-line {
-    display: block;
-    padding-top: 0;
-    padding-bottom: 67px;
+    &--hidden-line {
+      display: block;
+      padding-top: 0;
+      padding-bottom: 67px;
+    }
   }
 }
 
 @media @desktop-widths {
   .page-intro {
     width: 800px;
-  }
 
-  .page-intro--bottom {
-    padding-bottom: 65px;
-  }
+    &--bottom {
+      padding-bottom: 65px;
+    }
 
-  .page-intro--form {
-    display: inline-block;
-    padding-bottom: 80px;
-  }
+    &--form {
+      display: inline-block;
+      padding-bottom: 80px;
+    }
 
-  .page-intro--hidden-line {
-    display: inline;
-    width: auto;
+    &--hidden-line {
+      display: inline;
+      width: auto;
+    }
   }
 }
